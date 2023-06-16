@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let n =prompt("Nhập độ dài của mảng");
+  let a=[]
+  for( i=0; i<n;i++){
+    let d =+prompt("nhập các phần tử" +(i+1));
+    a.push(d)
+  }
+  console.log(a)
+  let m =prompt("Nhập độ dài của mảng");
+  let b=[]
+  for( i=0; i<m;i++){
+    let e =+prompt("nhập các phần tử" +(i+1));
+    b.push(e)
+  }
+  console.log(b)
+  let array =a.concat(b);
+  document.write(array);
+
+</script>

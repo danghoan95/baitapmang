@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let a =prompt("nhập chuỗi ");
+  let b =a.split(',')
+  let c =prompt("nhập chuỗi ");
+  let d =a.split(',')
+  let isEqual;
+  if(b.length !== d.length) {
+    isEqual = false;
+  }
+  else
+  {
+    for (let i = 0; i < b.length; i++) {
+      if(b[i] !== d[i]) {
+        isEqual = false;
+        break;
+      }
+      isEqual = true;
+    }
+  }
+  console.log(isEqual);
+
+</script>

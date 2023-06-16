@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = [[1, 2, 3], [2, 3, 4], [5, 6, 7]];
+    let chinh = 0;
+    let phu = 0;
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < a.length; j++) {
+            if (i === j) {
+                chinh = chinh + a[i][j]
+            }
+            if (i + j === a.length - 1) {
+                phu = phu + a[i][j]
+            }
+        }
+    }
+    document.write(chinh);
+    document.write("<br>");
+    document.write(phu);
+</script>
