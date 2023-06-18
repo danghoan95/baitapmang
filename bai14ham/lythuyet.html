@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>lythuyet</title>
+</head>
+<body>
+hello <input type="text" id="input" oninput="caculate()">is :<span id="result"></span>;
+</body>
+</html>
+<script>
+// function  hello(number){
+//     var result =number*number;
+//     return result;
+//
+// }
+//
+// function caculate(){
+//     var input =document.getElementById("input").value;
+//     var result = hello(input);
+//     document.getElementById("result").innerHTML= result
+// }
+</script>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
