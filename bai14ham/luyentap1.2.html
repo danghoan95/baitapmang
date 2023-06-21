@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+hi <input type="number" oninput="a()" id="lo"> is: <span id="result"></span>
+
+</body>
+</html>
+<script>
+    function sum(x) {
+        var result = +x + 1;
+        return result;
+    }
+
+    function a() {
+        var b = document.getElementById("lo").value;
+        result = sum(b);
+        document.getElementById("result").innerHTML = result
+    }
+</script>

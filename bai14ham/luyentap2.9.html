@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ký tự</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = prompt('nhập chuỗi ký tự');
+    let arr = n.split(" ");
+    index = -1
+
+    function kytu(number) {
+        document.write('mảng chưa sửa: ' + arr + "<br>");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "-") {
+                index++
+            }
+        }document.write(index)
+    }
+    kytu(arr)
+</script>

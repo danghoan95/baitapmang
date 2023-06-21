@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let index = -1;
+    let value =prompt("nhap")
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa_Minor', 'Tarurus', 'Cygnus', 'Lyra',' Aquila', 'Ursa', 'Major',' Leo'];
+
+    let value1 = display(value)
+
+    function display(value) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (value === arr1[i]) {
+                index = i;
+            }
+        }
+        if (index !== -1) {
+            for (i = 0; i < arr2.length; i++) {
+                if (index === i) {
+                    return arr2[i];
+                }
+            }
+
+        } else {
+            alert("khong phai")
+        }
+    }
+    document.write(value1)
+</script>

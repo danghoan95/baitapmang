@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dảo ngược mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let a =prompt("nhập chuỗi");
+  let b=a.split("")
+  let  temp =0;
+  let first =0;
+  last =b.length-1;
+
+  function daonguoc(number){
+    document.write(b +"<br>")
+    for(let i=0;first<last;i++){
+      temp =b[first];
+      b[first] =b[last];
+      b[last]=temp;
+      first++;
+      last--;
+
+    }
+    document.write(b)
+  }daonguoc(b)
+
+</script>
